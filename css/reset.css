@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* reset */
+html {font-size:100%;}
+body {
+	font:normal 18px, geogia, "돋움", dotum, Arial, Verdana, sans-serif;
+	line-height:1.5;
+	color:black;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6 {font-size:1em;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+img {border:none;}
+ul, ol {list-style:none;}
+
+/* common */
+a{color:gray; text-decoration: none;}
+a:hover{color:black;}
+h1 > a {color:black;}
+.purpleBox {color:white;width:134.17px;height:42px;padding:12px 16px; box-sizing:border-box;border-radius:4px;font-size:14px;background-color:#611F69; text-align:center;}
+.purpleBox:hover{color:white;background-color:#4a154b}
+li > p {color:gray; font-size:14px; display:none;}
+.on > p {display:block;}
+li > img {width:100%;-webkit-filter: grayscale(100%); filter: gray; opacity: 0.6;}
+.on > img{-webkit-filter: grayscale(none);filter: none;opacity:1;}
+.gridContainer > .grid3{width:100%; height:100%;max-width:1006px; max-height:480.97px; margin:0 auto;}
+.gridContainer > .grid3::after{content:'';clear:both;display:block;margin:0 auto;}
+.gridContainer > .grid3 > li {width:25%;float:left; max-width:265.03px;max-height:480.97px;padding:10px; background-color:white;}
+.gridContainer > .grid3 > li + li {margin-left:5%;}
+
+/* layout */
+.wrap{max-width:100%; max-height:100%;}
+header{width:87%; height:70px;margin:0 auto; margin-bottom:50px}
+.content{width:100%;height:100%;padding-top:70px;}
+.content::after{content:'';clear:both;display:block;}
+.introContainer {width:92%;height:751px;margin:0 auto; max-width:1370px; max-height:751px; position:relative;}
+.feature{width:100%; margin:4% auto;}
+.company {padding-top:10%;width:100%;background-color:whitesmoke;}
+.news {width:100%;margin:0 auto; background-color:#ebeaeb;}
+nav {width:87%; margin:5% auto; max-height:168px;}
+nav::after {content:'';clear:both;display:block;}
+
+/* header */
+header::after{content:'';clear:both;display:block;}
+header > h1 {float:left;padding:16px;}
+header > h1 > a {padding:12px; display:block;}
+header > ul {height:99%;}
+header > ul > li {float:left;padding:16px; box-sizing:border-box;font-size:16px;text-align:center;}
+header > ul > li > a {display:block; padding:12px;}
+header > .menu{float:left;}
+header > .login{float:right;text-align:center;}
+header > svg{display:none;}
+
+/* intro */
+.introContainer > .intro {width:87%; height:100%; margin:0 auto; position:absolute;}
+.introContainer > .intro > h2 {width:100%;margin:0 auto;max-height:169px;max-width:10em;line-height:1.12;text-align:center;font-size:4rem;margin-bottom:2%;}
+.introContainer > .intro > p {margin-bottom:6%;position:absolute;right:-5%;width:44%;margin:0 auto;}
+.introContainer > .intro > .inputBox {width:44%;text-align:center;float:left;position:absolute;right:-5%;top:36%;}
+.introContainer > .intro > .inputBox > form > input{float:left;padding:2.6%;}
+.introContainer > .intro > .inputBox > div {margin-top:2.8%;clear:both;float:left;}
+.introContainer > .intro > .slideContainer{width:56%;height:70%;max-height:751px;position:absolute;}
+.introContainer > .intro > .slideContainer > .slide {width:100%;height:100%;position:absolute;margin-left:5%;}
+.introContainer > .intro > .slideContainer > .slide > li {width:100%; height:100%;position:absolute; transition:all 0.4s ease;}
+.introContainer > .intro > .slideContainer > .slide > .first {max-width:251px; max-height:251px; top:-10%;left:-8%; } 
+.introContainer > .intro > .slideContainer > .slide > .mid {max-width:502px; max-height:502px; z-index:100; right:0;}
+.introContainer > .intro > .slideContainer > .slide > .last{max-width:316px; max-height:316px;margin-left:104%;margin-top:210px;}
+
+/* feature */
+.feature > h2 {font-size:2rem;text-align: center}
+.feature > p {max-width: 864px; margin:0 auto; font-size:1.3rem;margin-bottom:2%;}
+.feature > div {text-align:center; margin:0 auto;}
+.feature img {width:75px; height:60px;}
+.feature > ul{width:87%; padding:0 7%;}
+.feature > ul::after{content:'';clear:both;display:block;}
+.feature > ul > li {width:25%;padding:48px 0;float:left;max-width:278px;max-height:340px;}
+
+/* company */
+.company > h2 {font-size:2rem;text-align: center}
+.company > p {max-width: 864px; width:80%;margin:0 auto; font-size:1.3rem;margin-bottom:4%;}
+.company > .gridContainer {width:85%; height:100%; margin:0 auto;}
+.company > .gridContainer > .grid3{width:100%; height:100%;max-width:1006px; max-height:480.97px; margin:0 auto;}
+.company > .gridContainer > .grid3::after{content:'';clear:both;display:block;margin:0 auto;}
+.company > .gridContainer > .grid3 > li {width:25%;margin-left:5%;float:left; max-width:265.03px;max-height:480.97px;padding:10px; background-color:white;}
+.company > .gridContainer > .grid3 > li > a > img {width:100%;max-height:265.03px}
+.company > .gridContainer > .grid3 > li > a > img.logo {width:93px; height:32px;}
+.company > .gridContainer > .grid3 > li > a > img.secondLogo {width:178px;height:31px;}
+.company > .gridContainer > .logo {width:100%;margin:4% auto;}
+.company > .gridContainer > .logo::after{content:'';display:block;clear:both;}
+.company > .gridContainer > .logo > li{float:left;}
+.company > .gridContainer > .logo > li + li{margin-left:10%;}
+.company > .gridContainer > .logo > li > img {width:100%;height:100%;max-width:170px; max-height:40px;}
+
+/* news */
+/* 여기가 가장 이상적인 GRID CODE인것같다 */
+.news > .gridContainer {padding-top:5%;padding-bottom:7%;}
+.news > .gridContainer > h3 {text-align:center; padding:16px 0 26px 0; font-size:2rem;}
+.news > .gridContainer > .grid3 > li {margin-left:5%;}
+.news > .gridContainer > .grid3 > li > a > img{width:100%;height:100%;max-width:285px; max-height:208px;}
+
+/* free */
+.free{background-color:#611F69;padding:7% 0;}
+.free > h3 {text-align:center;color:white;font-size:2rem;margin-bottom:2%;}
+.free > .purpleBox{margin:0 auto;background-color:white;color:#611F69;}
+.free > .purpleBox > span{font-weight: bold;}
+
+/* nav */
+nav > div {float:left;width:15%;height:50%;max-width:186px;max-height:284.75px; font-size:14px;} 
+nav > div:nth-child(2){padding-left:25%;}
+nav > div::after{content:'';clear:both;display:block;}
+
+/* footer */
+footer {background-color:#ebeaeb; padding:2% 3%;font-size:14px;}
+footer::after{content:'';clear:both;display:block;}
+footer > ul{float:left;}
+footer > ul:nth-child(2){float:right;}
+footer > ul > li {float:left;}
+footer > ul > li + li {padding-left:32px}
+
+
+@media screen and (min-width:767px) and (max-width:1024px)
+{
+	/* header */
+	header{width:100%;margin-bottom:0;position:fixed;top:0;left:0;right:0;bottom:0;z-index: 300;background-color:white;}
+	header > ul {display:none;}
+	header > svg{float:right;display:block;margin-top:3%;margin-right:2%;}
+
+	/* intro */
+	.introContainer > .intro > .inputBox {width:100%;text-align:center;float:left;position:absolute;left:0;top:auto;bottom:-6%;margin:0 auto;}
+	.introContainer > .intro > .inputBox > form{width:100%;height:100%;}
+	.introContainer > .intro > .inputBox > form::after{content:'';clear:both;display:block;}
+	.introContainer > .intro > .inputBox > form > input[type="text"] {margin-right:1.5%;}
+	.introContainer > .intro > .inputBox > form > input{float:left;width:46%;height:100%;}
+	.introContainer > .intro > .slideContainer > .slide > .first{top:0;}
+	.introContainer > .intro > .slideContainer > .slide > .mid {top:10%;}
+
+	/* feature */
+	.feature{width:87%;margin-top:10%;}
+	.feature > h2{text-align:left;}
+	.feature > ul {padding:0;}
+	.feature > ul > li {width:50%;max-width:373.27px;max-height:314px;}
+}
+@media screen and (max-width:766px)
+{
+	/* header */
+	header{width:100%;margin-bottom:0;position:fixed;top:0;left:0;right:0;bottom:0;z-index: 300;background-color:white;}
+	header > ul {display:none;}
+	header > svg{float:right;display:block;margin-top:3%;margin-right:2%;}
+
+	/* intro */
+	.introContainer > .intro > h2 {font-size:1.625rem;margin:0;margin-left:3%;max-width:14em;text-align:left;margin-bottom:8px;}
+	.introContainer > .intro > p{padding-left:3%;top:0;left:0;position:unset;margin:0;width:unset;margin-bottom:8px;}
+	.introContainer > .intro > .slideContainer{margin-top:22%;}
+	.introContainer > .intro > .slideContainer > .slide > .first{top:5%;}
+	.introContainer > .intro > .slideContainer > .slide > .mid {top:15%;}
+
+
+	.introContainer > .intro > .inputBox {width:100%;text-align:center;float:left;position:absolute;left:0;top:auto;bottom:unset;margin:0 auto;}
+	.introContainer > .intro > .inputBox > form{width:100%;height:100%;}
+	.introContainer > .intro > .inputBox > form::after{content:'';clear:both;display:block;}
+	.introContainer > .intro > .inputBox > form > input{float:left;width:100%;height:100%;}
+	.introContainer > .intro > .inputBox > form > input[type="text"] {margin-bottom:4px;}
+	.introContainer > .intro > .inputBox > div {display:none;}
+
+
+	/* feature */
+	.feature{width:87%;margin-top:10%;}
+	.feature > h2{text-align:left;}
+	.feature > p{display:none;}
+	.feature > ul {padding:0;}
+	.feature > ul > li {width:100%;max-width:373.27px;max-height:314px;}
+
+	/* company */
+
+	.company > .gridContainer > .grid3 {overflow:hidden;width:100%;height:100%}
+	.company > .gridContainer > ul.grid3 > li {width:100%; margin-left:50%;height:100%;transform:translateX(-50%);max-width:unset;max-height:unset; max-width:400px; max-height:unset;}
+	.company > .gridContainer > .grid3 > li .logo{display:block; margin:0 auto;}
+	.company > .gridContainer > .grid3 > li > a > p {text-align: center;}
+	.company > .gridContainer > .grid3 > li > a > img {width:100%; max-width:400px;max-height:400px;}
+}
